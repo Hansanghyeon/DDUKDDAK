@@ -8,6 +8,7 @@
   "main": "public/electron.js",
   "homepage": "./",
   "dependencies": {
+    "@craco/craco": "^6.2.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -23,9 +24,9 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "react-start": "react-scripts start",
-    "react-build": "react-scripts build",
-    "react-test": "react-scripts test",
+    "react-start": "craco start",
+    "react-build": "craco build",
+    "react-test": "craco test",
     "react-eject": "react-scripts eject",
     "start": "concurrently \"cross-env NODE_ENV=development BROWSER=none yarn react-start\" \"wait-on http://localhost:3000 && electron .\"",
     "build": "yarn react-build && electron-builder",
@@ -51,6 +52,7 @@
   },
   "devDependencies": {
     "concurrently": "^6.2.0",
+    "craco-alias": "^3.0.1",
     "cross-env": "^7.0.3",
     "electron": "^13.1.7",
     "electron-builder": "^22.11.7",
