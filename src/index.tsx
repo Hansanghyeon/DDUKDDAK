@@ -2,7 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ThemeProvider from './provider/Theme'
+import ThemeProvider from './provider/Theme';
+
+import dayjs from 'dayjs';
+import duration from 'dayjs/plugin/duration';
+import 'dayjs/locale/ko';
+dayjs.locale('ko');
+dayjs.extend(duration);
 
 ReactDOM.render(
   <React.StrictMode>
