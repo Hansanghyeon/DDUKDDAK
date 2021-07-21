@@ -6,7 +6,10 @@
         "src/*"
       ],
       "@components/*": [
-        "src/view/components/*"
+        "src/components/*"
+      ],
+      "@hook/*": [
+        "src/hook/*"
       ]
     }
   }
